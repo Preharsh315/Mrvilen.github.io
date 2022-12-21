@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url(https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-size: cover;
+    background-position: center;
+}
+
+nav {
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.btn1
+{
+    color:#fff;
+}
+.logo {
+    font-family: Lucida Handwriting;
+    text-shadow: 0px 10px 4px rgb(123, 62, 0);
+    font-size: 30px;
+    color: rgb(255, 128, 0);
+    width: 120px;
+    cursor: pointer;
+}
+.navlinks
+{
+    flex:1;
+    text-align:right;
+    transition: 1s;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+nav ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: rgb(255, 128, 0);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+nav ul li:hover::after {
+    width: 100%;
+}
+
+.last {
+    margin:0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width:100%;
+    text-align: center;
+    padding: 0px 0;
+}
+.last p{
+    margin-top: 10px;
+    color:rgb(255, 128, 0);
+    font-size: 15px;
+}
+.icons .fa-brands
+{
+    margin:0 13px;
+    cursor: pointer;
+    padding: 0 0;
+}
+
+i {
+    color: rgb(255, 128, 0);
+}
+
+.btn1,
+.btn2,
+.btn3,
+.btn4 {
+    font-size: 20px;
+    background-color: transparent;
+}
+
+.btn1 {
+    border: none;
+}
+
+.btn2 {
+    margin-right: 30px;
+}
+
+.btn3 {
+    margin-right: 30px;
+}
+nav .fa-xmark{
+    display: none;
+}
+nav .fa-bars{
+    display: none;
+}
+@media(max-width:700px)
+{
+
+  nav ul li{
+    margin-bottom: 20px;
+    display: block;
+  }  
+  .navlinks{
+    position: absolute;
+    background: rgb(255, 128, 0);
+    height: 100vh;
+    top:0;
+    right:-200px;
+    text-align:center;
+    z-index:2;
+  }
+  nav .fa-xmark{
+    text-align:left;
+    display: block;
+    color:#fff;
+    margin:10px;
+    font-size:22px;
+    cursor: pointer;
+}
+nav .fa-house{
+    display: block;
+    color:#fff;
+    cursor: pointer;
+}
+nav .fa-magnifying-glass{
+    display: block;
+    color:#fff;
+    cursor: pointer;
+}
+nav .fa-bars{
+    text-align:left;
+    display: block;
+    color:rgb(255, 128, 0);
+    margin:10px;
+    font-size:22px;
+    cursor: pointer;
+}
+}
