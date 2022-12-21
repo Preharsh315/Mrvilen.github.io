@@ -1,0 +1,159 @@
+.content
+{
+    margin-top: -460px;
+    width:100%;
+    transform: translateY(-50%);
+    text-align: center;
+    color:#fff;
+    animation: transmition 2s;
+}
+.sub {
+    margin-top:80px;
+    font-family:Lucida Handwriting;
+    font-size: 50px;
+    text-shadow: 0px 10px 4px rgb(0, 0, 0);
+    text-align: center;
+    color:rgb(255, 128, 0);
+}
+.para
+{
+    margin:90px;
+    margin-top:15px;
+    margin-bottom: 25px;
+    text-align:center;
+    color:#fff;
+}
+.contact
+{
+    margin-left:80px;
+    margin-right:80px;
+    margin-top:20px;
+    margin-bottom:-175px;
+    padding:15px;
+    text-align:center;
+    color:#fff;
+    border-radius: 20px;
+    box-shadow: 6px 6px 6px rgba(255, 128, 0, 0.431),-6px -6px 6px rgba(255, 128, 0, 0.431);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: change 20s linear infinite;
+}
+#name
+{
+    margin-bottom:15px;
+}
+input#name
+{
+    height: 25px;
+    width:400px;
+    border:1px solid #878787;
+    border-radius:20px;
+    margin-top:8px;
+    box-shadow:inset 6px 6px 6px rgba(255, 128, 0, 0.431),inset -6px -6px 6px rgba(255, 128, 0, 0.431);
+    text-align:center;
+}
+#mail
+{
+    margin-bottom:15px;
+}
+input#mail
+{
+    height: 25px;
+    width:400px;
+    border:1px solid #878787;
+    border-radius:20px;
+    margin-top:8px;
+    box-shadow:inset 6px 6px 6px rgba(255, 128, 0, 0.431),inset -6px -6px 6px rgba(255, 128, 0, 0.431);
+    text-align:center;
+}
+#subject
+{
+    margin-bottom:15px;
+}
+input#subject
+{
+    height: 25px;
+    width:400px;
+    border:1px solid #878787;
+    border-radius:20px;
+    margin-top:8px;
+    box-shadow:inset 6px 6px 6px rgba(255, 128, 0, 0.431),inset -6px -6px 6px rgba(255, 128, 0, 0.431);
+    text-align:center;
+}
+#message
+{
+    margin-bottom:15px;
+}
+input#message
+{
+    height: 100px;
+    width:400px;
+    border:1px solid #878787;
+    border-radius:20px;
+    margin-top:8px;
+    box-shadow:inset 6px 6px 6px rgba(255, 128, 0, 0.431),inset -6px -6px 6px rgba(255, 128, 0, 0.431);
+    text-align:center;
+}
+input#submit
+{
+    color:white;
+    background-color:rgb(255, 128, 0);
+    height: 30px;
+    width:100px;
+    border:1px solid #878787;
+    border-radius:20px;
+    margin-top:8px;
+    box-shadow:inset -2px -2px 6px #000,inset 2px 2px 6px #fff;
+    text-align:center;
+}
+@keyframes transmition
+{
+    from
+    {
+        opacity: 0;
+        transform:rotateX('-10deg') ;
+    }
+    to
+    {
+        opacity: 1;
+        transform:rotateX('0') ;
+    }
+}
+@media(max-width:700px)
+{
+    .contact{
+        padding:auto;
+        margin-bottom: -20px;
+    }
+  .sub{
+    font-size:20px;
+  }  
+  .para{
+    font-size:auto;
+    display: inline;
+  }  
+  #msg{
+    font-size:auto;
+  }
+  input#name{
+    height: auto;
+    width: auto;
+  }
+  input#mail{
+    height: auto;
+    width: auto;
+  }  
+  input#subject{
+    height: auto;
+    width: auto;
+  }  
+  input#message{
+    height: auto;
+    width: auto;
+  }  
+  input#submit{
+    height: 20px;
+    width: 80px;
+  }    
+}
